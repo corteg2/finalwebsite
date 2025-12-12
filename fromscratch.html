@@ -6,11 +6,32 @@
     <title>From scratch</title>
     <link rel="stylesheet" href="css/newstyles.css">
     <link rel="stylesheet" href="css/layout.css">
+    <style>
+        /* Make images responsive */
+        .mainbody img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px 0;
+        }
+
+        /* Make the Tableau dashboard responsive */
+        .tableauPlaceholder object {
+            width: 100%;
+            height: 100%;
+            min-height: 500px;
+        }
+
+        /* Optional: add some padding to main content */
+        .mainbody {
+            padding: 20px;
+        }
+    </style>
 </head>
 
 <body class="colors">
     <div class="common header">
-        <img src="assets/img/football_feild.png" alt="Footballfield" width="1500" height="150">
+        <img src="assets/img/football_feild.png" alt="Footballfield" style="width:100%; height:auto;">
     </div>
 
     <div class="common leftmenu">
@@ -33,26 +54,21 @@
             </li>
 
             <li>What made him so special?<br>
-            Peyton Manning was so special because he spent more time studying game film than any of his opponents. <br>
-            He was never the most athletic athlete, but he knew his strengths and played to them.
+            Peyton Manning spent more time studying game film than any of his opponents. He was never the most athletic athlete, but he knew his strengths and played to them.
             </li>
         </ul>
 
-        <br><br><br><br>
+        <!-- Replaced YouTube video with football image -->
+        <img src="assets/img/footballpic.jpg" alt="Peyton Manning Football Action">
 
-        <!-- REPLACED YOUTUBE VIDEO WITH IMAGE -->
-        <img src="assets/img/footballpic.jpg" alt="Peyton Manning Football Action" width="550" height="200">
-        <!-- END OF REPLACEMENT -->
-
-        <br><br><br><br>
-
-        <div class='tableauPlaceholder' id='viz1734034563480'  style='position: relative'>
+        <!-- Tableau dashboard -->
+        <div class='tableauPlaceholder' id='viz1734034563480'  style='position: relative; width:100%; height:800px;'>
             <noscript>
                 <a href='#'>
                     <img alt='dashboard ' src='https://public.tableau.com/static/images/Fi/Finalproject_sports/dashboard/1_rss.png' style='border: none' />
                 </a>
             </noscript>
-            <object class='tableauViz'  style='display:none;'>
+            <object class='tableauViz'  style='display:none; width:100%; height:100%;'>
                 <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
                 <param name='embed_code_version' value='3' /> 
                 <param name='site_root' value='' />
@@ -73,13 +89,6 @@
         <script type='text/javascript'>
             var divElement = document.getElementById('viz1734034563480');
             var vizElement = divElement.getElementsByTagName('object')[0];
-            if ( divElement.offsetWidth > 800 ) { 
-                vizElement.style.width='1000px';vizElement.style.height='1427px';
-            } else if ( divElement.offsetWidth > 500 ) { 
-                vizElement.style.width='1000px';vizElement.style.height='1427px';
-            } else { 
-                vizElement.style.width='100%';vizElement.style.height='1877px';
-            }
             var scriptElement = document.createElement('script');
             scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
             vizElement.parentNode.insertBefore(scriptElement, vizElement);
