@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -31,4 +32,103 @@
             margin: 20px 0;
         }
 
-        /* Tab*
+        /* Tableau dashboard responsive */
+        .tableauPlaceholder {
+            width: 100%;
+            max-width: 1000px;
+            margin: 20px auto;
+            height: 700px; /* reasonable default */
+        }
+
+        .tableauPlaceholder object {
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Optional: clear floats for menus if needed */
+        .common {
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body class="colors">
+    <div class="common header">
+        <img src="assets/img/football_feild.png" alt="Footballfield">
+    </div>
+
+    <div class="common leftmenu">
+        <a href="index.html" style="color: white; text-decoration: none;" >| | Resume</a> <br> 
+        <a href="fromscratch.html" style="color: white; text-decoration: none;">| | Personal Interest</a><br> 
+    </div>
+
+    <div class="common mainbody">
+        <h1>Peyton Manning Career Overview</h1>
+
+        <ul>
+            <li>5 Cool things to know about Peyton Manning
+                <ol>
+                    <li>Peyton Manning was nicknamed "The Sheriff" because he always seemed to be in control of the game.</li>
+                    <li>He was able to command his teammates on what routes to run, and he knew what plays to call.</li>
+                    <li>He finished his career with the highest number of touchdown passes thrown in a regular season.</li>
+                    <li>He was able to defeat every team in the NFL (Only one quarterback was able to do that before him).</li>
+                    <li>Peyton Manning suffered a terrible neck injury that many thought he could never recover from, but he went on to win multiple MVP awards and a Super Bowl.</li>
+                </ol>
+            </li>
+
+            <li>What made him so special?<br>
+            Peyton Manning spent more time studying game film than any of his opponents. He was never the most athletic athlete, but he knew his strengths and played to them.
+            </li>
+        </ul>
+
+        <!-- Football image replacing YouTube video -->
+        <img src="assets/img/footballpic.jpg" alt="Peyton Manning Football Action" class="football-pic">
+
+        <!-- Tableau dashboard -->
+        <div class='tableauPlaceholder' id='viz1734034563480'>
+            <noscript>
+                <a href='#'>
+                    <img alt='dashboard ' src='https://public.tableau.com/static/images/Fi/Finalproject_sports/dashboard/1_rss.png' style='border: none;' />
+                </a>
+            </noscript>
+            <object class='tableauViz' style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                <param name='embed_code_version' value='3' /> 
+                <param name='site_root' value='' />
+                <param name='name' value='Finalproject_sports/dashboard' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='static_image' value='https://public.tableau.com/static/images/Fi/Finalproject_sports/dashboard/1.png' />
+                <param name='animate_transition' value='yes' />
+                <param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' />
+                <param name='language' value='en-US' />
+                <param name='filter' value='publish=yes' />
+            </object>
+        </div>
+
+        <script type='text/javascript'>
+            var divElement = document.getElementById('viz1734034563480');
+            var vizElement = divElement.getElementsByTagName('object')[0];
+            var scriptElement = document.createElement('script');
+            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+            vizElement.parentNode.insertBefore(scriptElement, vizElement);
+        </script>
+
+        <a href="#">Click here to return to the top</a>
+    </div>
+
+    <div class="common rightmenu">
+        <p>
+            AI web App <br><br>
+            <a href="https://corteg2.github.io/finalwebsite/contact.html" target="_blank">LINK to app</a>
+        </p>
+    </div>
+
+    <div class="common footer">
+        Website Established 12-11-25
+    </div>
+</body>
+</html>
