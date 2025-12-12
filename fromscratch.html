@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,20 +6,23 @@
     <title>From scratch</title>
     <link rel="stylesheet" href="css/newstyles.css">
     <link rel="stylesheet" href="css/layout.css">
+
+    <!-- Responsive adjustments and extra bottom padding -->
     <style>
         /* Keep the header image fixed height and responsive width */
         .header img {
             width: 100%;
             max-height: 150px;
-            object-fit: cover; /* Ensures image scales nicely without stretching */
+            object-fit: cover; 
             display: block;
         }
 
-        /* Main content padding */
+        /* Main content padding and extra space at bottom */
         .mainbody {
             padding: 20px;
             max-width: 1000px;
             margin: 0 auto;
+            padding-bottom: 200px; /* extra space for scrolling to see return link */
         }
 
         /* Football picture responsive */
@@ -37,7 +39,7 @@
             width: 100%;
             max-width: 1000px;
             margin: 20px auto;
-            height: 700px; /* reasonable default */
+            height: 700px; 
         }
 
         .tableauPlaceholder object {
@@ -45,7 +47,13 @@
             height: 100%;
         }
 
-        /* Optional: clear floats for menus if needed */
+        /* Footer spacing */
+        .footer {
+            margin-top: 50px;
+            text-align: center;
+            padding: 10px 0;
+        }
+
         .common {
             box-sizing: border-box;
         }
@@ -77,58 +85,5 @@
             </li>
 
             <li>What made him so special?<br>
-            Peyton Manning spent more time studying game film than any of his opponents. He was never the most athletic athlete, but he knew his strengths and played to them.
-            </li>
-        </ul>
+            Peyton Manning spent more time studying game film than any of his opponents. He was never the most athletic athlete, but he knew his stren
 
-        <!-- Football image replacing YouTube video -->
-        <img src="assets/img/footballpic.jpg" alt="Peyton Manning Football Action" class="football-pic">
-
-        <!-- Tableau dashboard -->
-        <div class='tableauPlaceholder' id='viz1734034563480'>
-            <noscript>
-                <a href='#'>
-                    <img alt='dashboard ' src='https://public.tableau.com/static/images/Fi/Finalproject_sports/dashboard/1_rss.png' style='border: none;' />
-                </a>
-            </noscript>
-            <object class='tableauViz' style='display:none;'>
-                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
-                <param name='embed_code_version' value='3' /> 
-                <param name='site_root' value='' />
-                <param name='name' value='Finalproject_sports/dashboard' />
-                <param name='tabs' value='no' />
-                <param name='toolbar' value='yes' />
-                <param name='static_image' value='https://public.tableau.com/static/images/Fi/Finalproject_sports/dashboard/1.png' />
-                <param name='animate_transition' value='yes' />
-                <param name='display_static_image' value='yes' />
-                <param name='display_spinner' value='yes' />
-                <param name='display_overlay' value='yes' />
-                <param name='display_count' value='yes' />
-                <param name='language' value='en-US' />
-                <param name='filter' value='publish=yes' />
-            </object>
-        </div>
-
-        <script type='text/javascript'>
-            var divElement = document.getElementById('viz1734034563480');
-            var vizElement = divElement.getElementsByTagName('object')[0];
-            var scriptElement = document.createElement('script');
-            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-            vizElement.parentNode.insertBefore(scriptElement, vizElement);
-        </script>
-
-        <a href="#">Click here to return to the top</a>
-    </div>
-
-    <div class="common rightmenu">
-        <p>
-            AI web App <br><br>
-            <a href="https://corteg2.github.io/finalwebsite/contact.html" target="_blank">LINK to app</a>
-        </p>
-    </div>
-
-    <div class="common footer">
-        Website Established 12-11-25
-    </div>
-</body>
-</html>
